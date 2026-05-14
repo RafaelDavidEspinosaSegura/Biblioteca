@@ -1,4 +1,4 @@
-using   system;
+using   System;
 using System.Collections.Generic;
 
 public class User
@@ -10,7 +10,10 @@ public class User
     public List<Loan> Loans { get; set; } = new List<Loan>();
     public List<Reservation> Reservations { get; set; } = new List<Reservation>();
 
-    public User()
+    public User(string name, string email)
     {
+        Name = name;
+        Email = email;
+    
     }
 }

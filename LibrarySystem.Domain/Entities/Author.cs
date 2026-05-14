@@ -9,7 +9,10 @@ public class Author
 
     public List<Book> Books { get; set; } = new List<Book>();
 
-    public Author()
+    public Author(string name, DateTime birthDate)
     {
+        Name = name;
+        BirthDate = birthDate;
+    
     }
 }

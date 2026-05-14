@@ -8,7 +8,9 @@ public class Category
 
     public List<Book> Books { get; set; } = new List<Book>();
 
-    public Category()
+    public Category(string name)
     {
+        Name = name;
+    
     }
 }

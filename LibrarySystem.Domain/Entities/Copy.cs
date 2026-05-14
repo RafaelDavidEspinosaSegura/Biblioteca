@@ -6,10 +6,13 @@ public class Copy
 {
     public int Id { get; set; }
     public int BookId { get; set; }
-    public Book Book { get; set; }
+    public Book? Book { get; set; }
     public bool IsAvailable { get; set; }
 
-    public Copy()
+    public Copy(int bookId, bool isAvailable = true)
     {
+        BookId = bookId;
+        IsAvailable = isAvailable;
+    
     }
 }
