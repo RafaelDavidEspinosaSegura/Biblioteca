@@ -9,7 +9,7 @@ public class Book
     public DateTime PublicationDate { get; set; }
     public required string ISBN { get; set; }
 
-    Ppublic list<Author> Authors { get; set; } = new List<Author>();
+    public list<Author> Authors { get; set; } = new List<Author>();
     public Category Category { get; set; }
     public int CategoryId { get; set; }
     public list<Copy> Copies { get; set; } = new List<Copy>();
